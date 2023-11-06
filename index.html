@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="nothing.css">
+            <script src="nothing.js"></script>
+            <title>Amaan's Singh Portfolio</title>
+            <style>
+                *{
+                    border: 1em;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>Amaan Singh's Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#User-Persona">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="User-Persona">
+                    <h2>User Persona</h2>
+                    <p>This is a brief <i>introduction</i> about <b>Amaan Singh's</b> website.</p>
+                    <picture>
+                        <source srcset="images/userpersona.png">
+                        <img src="images/userpersona.png" alt="User Persona">
+                    </picture>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    
+                    <video controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </section>
+                <section>
+                    <h2>What else I like to do</h2>
+                    <ol>
+                        <li>Basketball</li>
+                        <li>Going to the gym</li>
+                        <li>Music</li>
+                    </ol>
+                    <figure>
+                        <img src="images/Skepta1-min.jpg" alt="Skepta">
+                        <figcaption>One of my Favorite Artist</figcaption>
+                    </figure>
+                    <div>
+                        <h3>Some Additional Content</h3>
+                        <p>I also love <strong>Computer Engineering</strong> because <em>tech</em> is my life.</p>
+                        <code>print("Hello World")</code>
+                        <br>
+                        <hr>
+                        <aside>
+                            <h3>I like Python</h3>
+                        </aside>
+                    </div>
+                </section>
+                <section id="Skills">
+                    <table>
+                        <caption>Skills</caption>
+                        <colgroup>
+                            <col span="2">
+                        </colgroup>
+                        <tr>
+                            <th>Languages</th>
+                            <th>Applications</th>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Google Suite</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Microsoft Suite</td>
+                        </tr>
+                    </table>
+                    <details>
+                        <summary>More Details</summary>
+                        <p>I know More</p>
+                        <canvas id="myCanvas" width="400" height="200"></canvas>
+                        <p>Here's an inline SVG graphic:</p>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+                        </svg>
+                        <script>
+                            // JavaScript for drawing on the canvas
+                        const canvas = document.getElementById("myCanvas");
+                        const context = canvas.getContext("2d");
+        
+                        context.fillStyle = "blue"; // Set the fill color to blue
+                        context.fillRect(50, 50, 100, 50); // Draw a blue rectangle
+        
+                        // You can add more drawing operations here as needed
+                        </script>
+                    </details>
+                </section>
+                <section>
+                    <pre>Favorite Books:     <span>TKAM</span> 
+                    Holes
+                    My Antonia
+                    </pre>
+                    <iframe src="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"></iframe>
+                </section>
+                <section id="Contact">
+                  <form>
+                    <fieldset>
+                        <legend>Contact Me:</legend>
+                        <label for="name">Name:</label>
+                        <input list = "names" type="text" id="name" name="name">
+                        <datalist id="names">
+                            <option value="Jenny">
+                            <option value="Jessica">
+                            <option value="George">
+                            <option value="Zubac">
+                            <option value="Russell">
+                          </datalist>
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <br>
+                        <label for="Colors">Favorite Color:</label>
+                        <select name="Colors" id="Colors">
+                            <optgroup label="Dark Colors">
+                                <option value="Grey">Grey</option>
+                                <option value="Black">Black</option>
+                            </optgroup>
+                            <optgroup label="Bright Colors">
+                                <option value="Yellow">Yellow</option>
+                                <option value="Pink">Pink</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                  </form>
+                  <template id="template">
+                    <p>Amaansingh160@gmail.com</p>
+                  </template>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; 2023 Amaan Singh's Portfolio</p>
+            </footer>
+        </body>
+</html>
