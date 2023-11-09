@@ -1,0 +1,243 @@
+:root {
+    --main-color: #F0F7F4;
+    --fallback-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #32292f;
+    box-sizing: border-box;
+    /*background-color: #F0F7F4;*/
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--main-color, var(--fallback-color));
+}
+
+hero,
+main,
+footer {
+    padding: 7rem;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 4rem;
+    background-color: #70ABAF;
+    border-radius: 1rem;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+    
+    
+}
+
+header nav * {
+    background-color: #99E1D9;
+}
+
+header nav{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: #99E1D9;
+    margin: 1rem;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+
+header nav li {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+header nav li a{
+    text-decoration: none;
+}
+
+hero section{
+    background-color: #32292f;
+    margin-top: 5rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 2rem;
+    
+}
+hero section *{
+    color:  white;
+    margin: 5rem;
+}
+
+.container-left {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+  }
+  .container-right {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+
+  }
+  
+  .container-left .item {
+    border-radius: 1rem;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    background-color: #705d56;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    flex: 1; /* This will make all items have equal width */
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+  }
+
+  .container-right .item {
+    border-radius: 1rem;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    background-color: #705d56;
+    padding: 1rem;
+    margin: 1rem;   
+    flex: 1; /* This will make all items have equal width */
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+  }
+  box_info {
+    color: white;
+  }
+
+  box_info li{
+    text-align: left;
+  }
+
+  .round-image{
+    border-radius: 50%;
+    
+  }
+  grid{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .flex-container p {
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 250px;
+  }
+
+  #contact-form {
+    width: 100%;
+    margin-right: 0px;
+    padding: 5%;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-width: 1px;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 6%);
+  }
+
+  .flex-grid {
+    display: block;
+}
+
+.flex-grid .items{
+    padding: 0.5rem;
+
+}
+label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #32292f;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.input {
+    margin-bottom: 0px;
+    padding: 16px 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f0f0f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 6%);
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.text-area {
+    padding: 16px 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f0f0f0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 6%);
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+}
+
+.btn-primary {
+    padding: 18px 28px;
+  justify-content: center;
+  border-radius: 8px;
+  border: #99E1D9;
+  background-color: #99E1D9;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 25%;
+  min-width: 100px;
+}
+
+.btn-primary:hover {
+  background-color: #70ABAF;
+
+}
+h1:has(+ p) {
+    margin-bottom: 0;
+}
