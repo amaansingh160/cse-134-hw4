@@ -105,15 +105,11 @@
                     </grid>
                 </section>
                 <section id="Contact">
-                    <form id="contact-form" method="get">
+                    <form id="contact-form" action="httpbin.org/post" method="post">
                         <div class="flex-grid">
                             <div class="items">
                               <label for="Name">Full Name</label>
                               <input type="text" class="input w-input" maxlength="256" name="Name" data-name="Name" placeholder="ex. John Carter" id="Name"/>
-                            </div>
-                            <div class="items">
-                              <label for="Phone">Phone</label>
-                              <input type="tel" class="input w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="(123) 456 - 789" id="Phone"/>
                             </div>
                         </div>
                         <div class="flex-grid">
@@ -121,15 +117,12 @@
                               <label for="Email-2">Email Address</label>
                               <input type="email" class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="example@email.com" id="email_id" required/>
                             </div>
-                            <div class="items">
-                              <label for="Subject">Subject</label>
-                              <input type="text" class="input w-input" maxlength="256" name="Subject" data-name="Subject" placeholder="ex. Project Details" id="sub_mess"/>
-                            </div>
                           </div>
                           <div class="items">
                             <label for="Message">Leave me a message</label>
                             <textarea id="message" name="Message" maxlength="5000" data-name="Message" placeholder="Please type your message here..." class="text-area w-input" required></textarea>
                           </div>
+                          <input type="hidden" name="possible_bot" id="possible_bot" value="true">
                           <div class="items">
                           <input type="submit" id="submit-form-btn" class="btn-primary"/>
                           </div>
