@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const formErrors = [];
     const themeToggle = document.getElementById("theme-toggle");
     const body = document.body;
+
     
     const savedTheme = localStorage.getItem("theme");
         if (savedTheme) {
