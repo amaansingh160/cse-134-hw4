@@ -4,30 +4,8 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="index.css">
-            <script type="text/javascript" src="index.js"></script>
+            <script src="nothing.js"></script>
             <title>Amaan's Singh Portfolio</title>
-            <style>
-                body {
-                    --background-color: #f8f8f8; /* Default background color for light mode */
-                    --text-color: #333; /* Default text color for light mode */
-                }
-        
-                /* Dark mode styles */
-                body.dark-mode {
-                    --background-color: #1f1f1f; /* Background color for dark mode */
-                    --text-color: #fff; /* Text color for dark mode */
-                }
-        
-                body {
-                    background-color: var(--background-color);
-                    color: var(--text-color);
-                    transition: background-color 0.5s, color 0.5s;
-                }
-        
-                button {
-                    cursor: pointer;
-                }
-            </style>
         </head>
         <body>
             <header>
@@ -131,32 +109,24 @@
                         <div class="flex-grid">
                             <div class="items">
                               <label for="Name">Full Name</label>
-                              <input type="text" class="input w-input" maxlength="256" name="Name" data-name="Name" placeholder="ex. John Carter" id="Name"/>
-                              <span class="error" aria-live="polite"></span>
+                              <input type="text" class="input w-input" maxlength="256" name="Name" data-name="Name" placeholder="ex. John Carter" id="Name" required/>
                             </div>
                         </div>
                         <div class="flex-grid">
                             <div class="items">
-                              <label for="Email">Email Address</label>
-                              <input id="Email" type="text" class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="example@email.com"/>
-                              <span class="error" aria-live="polite"></span>
+                              <label for="Email-2">Email Address</label>
+                              <input type="email" class="input w-input" maxlength="256" name="Email" data-name="Email" placeholder="example@email.com" id="email_id" required/>
                             </div>
                           </div>
                           <div class="items">
                             <label for="Message">Leave me a message</label>
-                            <textarea id="Message" name="Message" maxlength="250" data-name="Message" placeholder="Please type your message here..." class="text-area w-input"></textarea>
-                            <span class="error" aria-live="polite"></span>
+                            <textarea id="message" name="Message" maxlength="250" data-name="Message" placeholder="Please type your message here..." class="text-area w-input" required></textarea>
                           </div>
                           <input type="hidden" name="possible_bot" id="possible_bot" value="true">
                           <div class="items">
                           <input type="submit" id="submit-form-btn" class="btn-primary"/>
                           </div>
                   </form>
-
-                  <div class="items">
-                    <button id="theme-toggle" class="btn-primary">Toggle Theme</button>
-                </div>
-
                   <template id="template">
                     <p>Amaansingh160@gmail.com</p>
                   </template>
